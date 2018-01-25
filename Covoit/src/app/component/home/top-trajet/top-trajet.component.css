@@ -1,0 +1,31 @@
+img {
+height: 50%;
+width: 50%;
+color: white;
+}
+
+.big-title3 {
+    margin-bottom: 3em;
+}
+h3.big_title3 {
+    
+  color: #212121;
+  font-size: 3.5em;
+  font-weight: 700;
+  margin: 0 auto;
+  text-shadow: 2px 2px 2px rgba(179, 171, 171, 0.8);
+  -webkit-text-shadow: 2px 2px 2px rgba(179, 171, 171, 0.8);
+  -moz-text-shadow: 2px 2px 2px rgba(179, 171, 171, 0.8);
+  -o-text-shadow: 2px 2px 2px rgba(179, 171, 171, 0.8);
+  -ms-text-shadow: 2px 2px 2px rgba(179, 171, 171, 0.8);
+  letter-spacing: 1px;
+  position: relative;
+
+}
+
+h4 {
+  text-align: center;
+  text-decoration: underline;
+}
+
+
