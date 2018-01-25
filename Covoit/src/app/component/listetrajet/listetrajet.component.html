@@ -1,0 +1,42 @@
+
+<app-search-trajet> </app-search-trajet>
+
+			<h1>{{welcome}}</h1>
+
+
+
+
+ <div class="col-md-12">
+  <table class="table table-responsive table-hover">
+    <tr>
+                        <th>Ville de départ</th>
+
+                        <th>Ville d'arrivée</th>
+
+                        <th>Date de départ</th> 
+
+                        <th>Adresse rendez-vous</th>
+
+                        <th>Adresse de dépose</th>
+
+                        <th>Nombre de places<th>
+
+                        <th>Prix trajet</th> 
+
+    </tr>
+                   <tr *ngFor="let t of todos  "   >
+                    	
+                    	
+
+                        <td >{{t.ville_depart}}</td>
+                        <td>{{t.ville_arrivee}}</td>
+                        <td>{{t.date_depart}}</td>
+                        <td>{{t.adr_rdv}}</td>
+                        <td>{{t.adr_depose}}</td>
+                        <td>{{t.nbrPlaces}}</td>
+                        <td>{{t.prix_trajet}}</td>
+                       
+                    </tr>
+  </table>
+</div>
+
