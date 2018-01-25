@@ -1,0 +1,51 @@
+<div class="container-fullwidth">
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-2">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          
+            <a class="navbar-brand" [routerLink]="['/']"	><img src="assets\logo1.png" > 
+        </a>
+       </div>
+ 
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="navbar-collapse-2">
+          <ul class="nav navbar-nav navbar-right">
+            <li><button type="button" class="btn btn-primary btn-outline btn-circle" [routerLink]="['/proposer-trajet']" >
+          <span class="glyphicon glyphicon-plus"></span> Proposer un trajet 																											 
+        </button></li>
+            
+            <li>
+              <a class="btn btn-default btn-outline btn-circle"  data-toggle="collapse" ng-href="connect.html" aria-expanded="false" aria-controls="nav-collapse2" [routerLink]="['/connexion']">Connexion</a>
+            </li>
+
+            <li><a class="btn btn-default btn-outline btn-circle"  data-toggle="collapse" href="<app-connec t-page>" aria-expanded="false" aria-controls="nav-collapse2" [routerLink]="['/inscription']">Inscription</a></li>
+           <li>
+              <a class="btn btn-default btn-outline btn-circle"  data-toggle="collapse" ng-href="connect.html" aria-expanded="false" aria-controls="nav-collapse2" [routerLink]="['/listeTrajet']">Liste des trajets</a>
+            </li>
+          </ul>
+          <div class="collapse nav navbar-nav nav-collapse" id="nav-collapse2">
+            <form class="navbar-form navbar-right form-inline" role="form">
+              <div class="form-group">
+                <label class="sr-only" for="Email">Email</label>
+                <input type="email" class="form-control" id="Email" placeholder="Email" autofocus required />
+              </div>
+              <div class="form-group">
+                <label class="sr-only" for="Password">Password</label>
+                <input type="password" class="form-control" id="Password" placeholder="Password" required />
+              </div>
+              <button type="submit" class="btn btn-success">Se connecter</button>
+            </form>
+          </div>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container -->
+    </nav><!-- /.navbar -->
+</div>  
+
+<!--  .navbar-brand { position: relative;z-index: 2 ;} -->
