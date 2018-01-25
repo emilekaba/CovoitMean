@@ -1,0 +1,42 @@
+const express = require('express');
+const router = express.Router();
+const passport = require('passport');
+const jwt = require('jsonwebtoken');
+const config = require('../config/database');
+const Trajet = require('../models/trajets');	
+
+router.post("/addtrajet", (req, res) => {
+  var newTrajet = new Trajet({
+    ville_depart: req.body.ville_depart,
+    ville_arrivee: req.body.ville_arrivee,
+    date_depart: req.body.date_depart,
+    adr_rdv: req.body.adr_rdv,
+    adr_depose: req.body.adr_depose,
+    nbrPlaces: req.body.nbrPlaces,
+    prix_trajet: req.body.prix_trajet  
+  });
+  newTrajet.save()
+    .then(item => {
+      res.send("item saved to database");
+    })
+    .catch(err => {
+      res.status(400).send("unable to save to database");
+    });
+});
+
+
+ router.get('/trajetlist', function (req, res, next) {
+    Trajet.find({}, function (err, docs) {
+      if (err) {
+        res.status(504);
+        res.end(err);
+      } else {
+        
+        res.end(JSON.stringify(docs));
+      }
+    });
+  });
+
+module.exports = router;
+
+
